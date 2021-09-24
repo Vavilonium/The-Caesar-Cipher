@@ -10,6 +10,7 @@ while True:
     message = input("Введите сообщение для шифрования русскими буквами: ") if not n else input("Введите"
                                                                                                " строку для расшифровки"
                                                                                                " русскими буквами: ")
+    message = message.lower()
     # проверка сообщения на английские символы
     for letter in message:
         if letter in alphabeteng:
